@@ -1,5 +1,32 @@
 # Local engineering validation
 
+## Version 0.1.1, 2026-10-03
+
+All 41 source tests pass on local Node.js 25.9.0 / Darwin arm64. New regressions
+cover both write methods, sanitizer arguments in each position and through
+immutable aliases, two sanitizer fragments, single-sanitizer and static-only
+PASS controls, and two independent argument failures surviving composition
+OPEN plus result/report omission. Independent source probes confirm the
+previous composed PASS observations now become OPEN, while known argument
+failures remain FAIL. No fixture, browser or sanitizer implementation runs.
+
+The [HTML Standard document write steps](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#document-write-steps)
+combine every argument into one string before HTML parsing; writeln adds a
+newline. The finite contract for a complete sanitized HTML value does not
+certify a new attribute/HTML context produced by joining separate arguments.
+This correction is conservative source-policy uncertainty, not a demonstrated
+runtime exploit or a claim about the provider's actual implementation.
+
+`SOURCE_REVIEW_MANIFEST.json` binds current complete formal source bytes.
+`SOURCE_AUDIT.json` remains the historical version 0.1.0 runtime snapshot;
+`SOURCE_REVIEW.json` retains its fixed original-upstream read scope. Neither
+historical record substitutes for current hashes. Fresh installed npm/source
+consumers, licenses, source identities and exact new archive hashes are bound
+in separate dated engineering evidence. Current-revision hosted CI, unobserved
+Node/platform combinations, authenticity, ownership and CVP admission remain OPEN.
+
+## Historical version 0.1.0
+
 Measured Node.js 25.9.0, Darwin arm64. All new runtime, all tests, strict JSON
 input/CLI, package pins, provenance, scope and CI are reviewed. 38 meaningful
 local tests pass. Fixtures cover all sink families and argument positions,

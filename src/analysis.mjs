@@ -8,11 +8,12 @@ const methodSinks = new Set(['insertAdjacentHTML', 'createContextualFragment', '
 function position(ctx, n) { return { source_id: ctx.id, line: n.loc.start.line, utf16_column: n.loc.start.column + 1, byte_offset: ctx.byteOffsets[n.start] }; }
 function result(ctx, node, rule, status, reason, evidence = []) { emit(ctx.report, position(ctx, node), rule, status, reason, evidence.slice(0, 32).map(x => position(ctx, x))); }
 function checkValue(ctx, node, rule, expr) {
-  if (ctx.dynamicScope) { result(ctx, node, rule, 'OPEN', 'dynamic_scope_unresolved'); return; }
-  if (ctx.loopDepth.get(node)) { result(ctx, node, rule, 'OPEN', 'loop_flow_unresolved'); return; }
+  if (ctx.dynamicScope) { result(ctx, node, rule, 'OPEN', 'dynamic_scope_unresolved'); return 'unknown'; }
+  if (ctx.loopDepth.get(node)) { result(ctx, node, rule, 'OPEN', 'loop_flow_unresolved'); return 'unknown'; }
   const v = value(ctx, expr);
   if (v.kind === 'static' || v.kind === 'sanitized') result(ctx, node, rule, 'PASS', v.kind === 'static' ? 'static_primitive_html_data' : 'asserted_import_sanitizer_contract', v.evidence);
   else result(ctx, node, rule, v.kind === 'unproven' ? 'FAIL' : 'OPEN', v.kind === 'unproven' ? 'html_safety_not_established' : v.reason, v.evidence);
+  return v.kind;
 }
 function propertyAssignment(ctx, n) {
   const left = n.type === 'AssignmentExpression' ? n.left : n.argument;
@@ -38,7 +39,12 @@ function methodCall(ctx, n) {
   if (n.arguments.some(x => x.type === 'SpreadElement') || n.arguments.length > 32) { result(ctx, n, p, 'OPEN', 'sink_argument_inventory_unresolved'); return; }
   if (p === 'write' || p === 'writeln') {
     if (!n.arguments.length) { result(ctx, n, p, 'PASS', 'empty_html_argument_inventory'); return; }
-    for (const arg of n.arguments) checkValue(ctx, n, p, arg); return;
+    let sanitized = false;
+    for (const arg of n.arguments) if (checkValue(ctx, n, p, arg) === 'sanitized') sanitized = true;
+    // Both methods concatenate their arguments before parsing HTML. A contract
+    // for one sanitized HTML value does not establish safety in that context.
+    if (n.arguments.length > 1 && sanitized) result(ctx, n, p, 'OPEN', 'sanitizer_composition_context', n.arguments);
+    return;
   }
   if (n.arguments.length !== (p === 'insertAdjacentHTML' ? 2 : 1)) { result(ctx, n, p, 'OPEN', 'sink_arity_unresolved'); return; }
   if (p === 'insertAdjacentHTML') {

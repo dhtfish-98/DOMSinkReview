@@ -70,6 +70,41 @@ test('sanitized fragments are not certified in concatenated/template contexts', 
   for (const v of ['"Hi "+clean(data)', '`Hi ${clean(data)}`', 'clean(data)+"Hi"']) check('import {sanitize as clean} from "safe-library";'+sink(v), 'OPEN', o);
   check(sink('escapeHTML`Hi ${data}`'), 'OPEN');
 });
+test('write and writeln concatenate sanitized arguments into an unresolved HTML context', () => {
+  const o = { host: 'browser', sanitizers: [named] };
+  const imported = 'import {sanitize as clean} from "safe-library";';
+  for (const method of ['write', 'writeln']) {
+    for (const args of ['\'<a title="\',clean(data),\'">Hello</a>\'', 'clean(data),"tail"', '"prefix",clean(data)', 'clean(data),clean(other)', 'first,"tail"']) {
+      const r = check(imported+'const first=clean(data);document.'+method+'('+args+')', 'OPEN', o);
+      assert(r.unknowns.includes('sanitizer_composition_context')); assert.equal(r.finding_count, 0);
+    }
+  }
+});
+test('write and writeln keep single sanitizer and fully static multi-argument controls', () => {
+  const o = { host: 'browser', sanitizers: [named] };
+  for (const method of ['write', 'writeln']) {
+    check('import {sanitize as clean} from "safe-library";document.'+method+'(clean(data))', 'PASS', o);
+    check('const html="Hi";document.'+method+'(html,"there",1,true,null)', 'PASS', o);
+    check('document.'+method+'()', 'PASS', o);
+  }
+});
+test('every variadic argument failure survives sanitizer composition and omitted details', () => {
+  const o = { host: 'browser', sanitizers: [named] };
+  for (const method of ['write', 'writeln']) {
+    for (const args of ['data,clean(other),other', 'clean(data),other,third']) {
+      const r = run('import {sanitize as clean} from "safe-library";document.'+method+'('+args+')', o, {results:1,reportBytes:2048});
+      assert.equal(r.status, 'FAIL'); assert.equal(r.finding_count, 2);
+      assert(r.unknowns.includes('sanitizer_composition_context')); assert(r.unknowns.includes('result_budget'));
+      const encoded = encode(r); assert(encoded.length <= 2048); assert.equal(JSON.parse(encoded).finding_count, 2);
+    }
+    const source = Buffer.from('import {sanitize as clean} from "safe-library";document.'+method+'(data,clean(other),other)');
+    const r = review(Array.from({length:4}, () => source), o, {reportBytes:2048});
+    const encoded = encode(r);
+    assert.equal(r.status, 'FAIL'); assert.equal(r.finding_count, 8);
+    assert(r.unknowns.includes('sanitizer_composition_context')); assert(r.unknowns.includes('report_budget'));
+    assert(encoded.length <= 2048); assert.equal(JSON.parse(encoded).finding_count, 8);
+  }
+});
 test('host is asserted and document/window/globalThis are lexical bindings', () => {
   check(sink('"Hello"'), 'OPEN', {});
   check('function f(document){document.body.innerHTML="Hi"}', 'OPEN');

@@ -77,7 +77,7 @@ executes or tests a regexp supplied by target source.
 | `insertAdjacentHTML` | Declared element, exactly two arguments; first is a constant standard position, second is the HTML value. |
 | `createContextualFragment` | Declared range from `document.createRange()`, exactly one HTML argument. |
 | `setHTMLUnsafe` | Declared element or shadow root, exactly one HTML argument; options/custom sanitizer overloads are `OPEN`. |
-| `document.write`, `document.writeln` | Declared document, every argument checked; zero arguments has an empty-inventory observation. |
+| `document.write`, `document.writeln` | Declared document, every argument checked; zero arguments has an empty-inventory observation. Multiple arguments containing a trusted sanitizer result also produce composition `OPEN`. |
 
 Missing/excess/spread arguments, optional calls, detached sink methods,
 `.call`/`.apply`, sink tagged templates, unresolved computed names and loop
@@ -135,7 +135,13 @@ Tagged escapers and options overloads have no trusted contract in this subset.
 The assertion does not audit or attest the provider's implementation, module
 resolution, runtime version, output type or efficacy. Sanitized results used
 in concatenation or interpolation stay `OPEN`: this contract does not prove
-safety in a newly composed HTML/attribute context. Assertions are reflected
+safety in a newly composed HTML/attribute context. `document.write` and
+`document.writeln` concatenate their arguments before parsing, as specified by
+the [HTML Standard document write steps](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#document-write-steps).
+Therefore multi-argument calls containing a sanitizer result preserve `OPEN`
+for the combined context, while every argument is still checked for policy
+failures. A single sanitizer argument and fully static multi-argument calls
+retain their declared PASS behavior. Assertions are reflected
 as a contract count; module/export/name/source text is not echoed.
 
 ## Positions, privacy and budgets

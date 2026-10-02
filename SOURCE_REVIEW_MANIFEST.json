@@ -1,0 +1,238 @@
+{
+  "schema": "source-review-manifest/v1",
+  "project": "DOMSinkReview",
+  "version": "0.1.1",
+  "date": "2026-10-03",
+  "baseline_head": "a8c88a603d69d06c4a353b90139cdafa30af61d8",
+  "review_scope": "Current new runtime, all tests, CLI/input contracts, package/lock/build/CI and public scope/provenance documents. Existing fixed upstream/dependency read scopes are retained separately; no complete upstream or dependency audit is claimed.",
+  "self_hash_excluded": true,
+  "historical_evidence_is_current_source_validation": false,
+  "current_revision_hosted_ci": "OPEN",
+  "real_cvp_eligibility_approval": "OPEN",
+  "cross_platform_runtime": "OPEN",
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1164,
+      "sha256": "1d247fd9171ed4c972a6c04c362a62601987690cfdd514536b9d2cfdab739a57",
+      "lines": 32,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 62,
+      "sha256": "c3bc9aac2dbfbf1d6e69961bc50ea7af57e907cb26bcab7e8dc99adbaa6ca00d",
+      "lines": 6,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "DEFENSIVE_SCOPE.md",
+      "bytes": 1068,
+      "sha256": "1b5d169cb3b278bd9952ad4715a32eeead22e047413a501dc347918e98e63d0a",
+      "lines": 18,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "DEPENDENCIES.md",
+      "bytes": 1417,
+      "sha256": "8d12391604b1adaad124ed40a54afbaf721c253a77f15677cf05f7d33c24027a",
+      "lines": 23,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "lines": 373,
+      "read_scope": "unchanged_full_license_byte_identity_and_attribution"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 1000,
+      "sha256": "30b563633cdf0bde11b270788e1738c2c8fae9f1dcdcc5bb1eed43b9dad839f0",
+      "lines": 17,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "ORIGIN.md",
+      "bytes": 2086,
+      "sha256": "e006c2596868b9bd9b8c82a7bab2df4f12f6631054f3430bbc79f80c28b1f23e",
+      "lines": 34,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10193,
+      "sha256": "08ee9dada2394c47a3c94c826edcd11323ff42c70d29cb6a393cb8170d91596b",
+      "lines": 180,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "SOURCE_AUDIT.json",
+      "bytes": 8645,
+      "sha256": "4fe51c6fdf1abe00cf9c283b347c5b3f74985f96348da37077db42c8154d9207",
+      "lines": 248,
+      "read_scope": "historical_record_identity_and_explicit_original_scope"
+    },
+    {
+      "path": "SOURCE_REVIEW.json",
+      "bytes": 10792,
+      "sha256": "1f0bab6193847d206b46099ca2081ee3b38970e2728a0152864879e8d0273392",
+      "lines": 238,
+      "read_scope": "historical_record_identity_and_explicit_original_scope"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4215,
+      "sha256": "33d6c979e4e4d8de69f9f355dc362b1b42fbf9fc57eaaf1155c623431cf18c72",
+      "lines": 68,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "examples/request-fail.json",
+      "bytes": 172,
+      "sha256": "948ea1f66395333af6cf98aea0827335e2cc4d7c9ea2f461c22f819d16dc278c",
+      "lines": 11,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "examples/request-open.json",
+      "bytes": 115,
+      "sha256": "66ce1233e0b87e77dba8d105219163d7125f6c727774cdc0d03fe361c0b5b443",
+      "lines": 8,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "examples/request-pass.json",
+      "bytes": 168,
+      "sha256": "e8cef9eabf581de99102d71fc9f2344e706b856069a3d4fe614c9decefd9e6fd",
+      "lines": 11,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "examples/request-sanitizer.json",
+      "bytes": 411,
+      "sha256": "99ba42b4633ecc9cd107b2bdb0841d5533ba4bb81f6c4ebfd3c0d92ff780e148",
+      "lines": 20,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 783,
+      "sha256": "4465352b400ca570084a40ccb9434408f73c7a9a4b79c4c3f71662054d882779",
+      "lines": 34,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "package.json",
+      "bytes": 782,
+      "sha256": "64f024530e94422aacbc94a6fecb277b6665c88dd318b91f6e37db079d7cc71b",
+      "lines": 40,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/analysis.mjs",
+      "bytes": 5289,
+      "sha256": "c337186cbf9bdee01166a76fc919283dcc581e91baaf92048c325d454f377651",
+      "lines": 73,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/cli-runner.mjs",
+      "bytes": 1478,
+      "sha256": "888f14e322e17bae3825559c574651a8cdc4fce97818dae70afacc2ea90db3e2",
+      "lines": 22,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/cli.mjs",
+      "bytes": 180,
+      "sha256": "f9bb34e5d0132b355ebfefe505998b0bb5af79f3f0f7712dab3fb164f9fdc051",
+      "lines": 4,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/contracts.mjs",
+      "bytes": 3996,
+      "sha256": "e9d328cb193772d266a9aa6c903d6986568fb543ef0f2242a4f64e0d62ce9f5d",
+      "lines": 44,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/input.mjs",
+      "bytes": 3058,
+      "sha256": "2d4ef64df22527a5882639aafb791a2f25488052f5a18da01104146697326792",
+      "lines": 45,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/parser.mjs",
+      "bytes": 1956,
+      "sha256": "efd4d10b4ca338dbc61ee8d2542cd8ed38938299a001f79fc21e3666a38d7e40",
+      "lines": 38,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/review.mjs",
+      "bytes": 2424,
+      "sha256": "3692f9da32f3d8950735bed9b0d9aa7b7949a39fde8286058820ee06dff8b957",
+      "lines": 36,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/scope.mjs",
+      "bytes": 10276,
+      "sha256": "6b22c34cb34fe29c3e91847496d932aba475a663bae4cb624aac893f7c40c998",
+      "lines": 132,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "src/values.mjs",
+      "bytes": 9107,
+      "sha256": "a4aceabeef82b14aa7326430f18d2fbb9c57060ef018d0f8f4fafea78a942617",
+      "lines": 120,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "test/input.test.mjs",
+      "bytes": 3764,
+      "sha256": "1e66d04c8a36b2fc72e10c8b7f5807a2ce5283c0005e3a4e81f584d8a358a754",
+      "lines": 31,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "test/review.test.mjs",
+      "bytes": 18068,
+      "sha256": "087d3480b8c86f129febb65012489280b40a9e68fb2af67807d6c90b6bb4c749",
+      "lines": 198,
+      "read_scope": "complete_current_runtime_test_metadata_document_or_ci_file"
+    },
+    {
+      "path": "third_party/acorn/LICENSE",
+      "bytes": 1099,
+      "sha256": "76a876cf886ff9be2a8b5e2e86514fed06223c8c9f0c1e9ee9606e93841e00b7",
+      "lines": 21,
+      "read_scope": "unchanged_full_license_byte_identity_and_attribution"
+    },
+    {
+      "path": "third_party/acorn/ORIGIN.json",
+      "bytes": 1152,
+      "sha256": "870e56171b08e5ca68177330629517fece74adf3e2e18bd15a6036066fafe177",
+      "lines": 29,
+      "read_scope": "pinned_dependency_origin_identity_and_stated_partial_audit_scope"
+    },
+    {
+      "path": "third_party/mozilla/LICENSE",
+      "bytes": 16725,
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "lines": 373,
+      "read_scope": "unchanged_full_license_byte_identity_and_attribution"
+    }
+  ],
+  "semantic_sources": [
+    {
+      "url": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#document-write-steps",
+      "selected_semantics": "write/writeln append all arguments into one string before parsing, with a newline added for writeln. Multi-argument sanitized fragments lack a composed-context guarantee; per-argument failures and counts remain independently observed."
+    }
+  ]
+}
