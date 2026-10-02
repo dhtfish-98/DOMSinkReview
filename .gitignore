@@ -1,0 +1,6 @@
+/node_modules/
+/.deps/
+/dist/
+/.consumer*/
+/.npm-cache/
+*.log

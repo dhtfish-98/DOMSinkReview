@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "base64": "aW1wb3J0IHtzYW5pdGl6ZSBhcyBjbGVhbn0gZnJvbSAic2FmZS1saWJyYXJ5Ijtkb2N1bWVudC5ib2R5LmlubmVySFRNTD1jbGVhbihkYXRhKQ=="
+    }
+  ],
+  "options": {
+    "host": "browser",
+    "sourceType": "module",
+    "sanitizers": [
+      {
+        "module": "safe-library",
+        "imported": "sanitize",
+        "member": null,
+        "argument": 0,
+        "arity": 1
+      }
+    ]
+  }
+}

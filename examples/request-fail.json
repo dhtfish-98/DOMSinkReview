@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "base64": "ZG9jdW1lbnQuYm9keS5pbm5lckhUTUw9aW5wdXQudmFsdWU="
+    }
+  ],
+  "options": {
+    "host": "browser",
+    "sourceType": "module"
+  }
+}

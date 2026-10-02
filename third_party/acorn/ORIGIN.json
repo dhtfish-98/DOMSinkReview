@@ -1,0 +1,29 @@
+{
+  "name": "acorn",
+  "version": "8.15.0",
+  "license": "MIT",
+  "npm_gitHead": "6dc537416ad628b3959b3ff963fbdcfdb380e0a3",
+  "tarball": "https://registry.npmjs.org/acorn/-/acorn-8.15.0.tgz",
+  "tarball_sha256": "e46eae89bd9761f16d1d25563b837b55b4b78f3ece06ee0b9789cb2644f523b3",
+  "integrity": "sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==",
+  "verified_sha512_and_sha1": true,
+  "dependency_audit_scope": "Official public parse/Parser API README; npm package.json/license; selected runtime Parser/depth/readRegexp ranges. Mature trusted dependency, not claimed rewritten or fully audited.",
+  "selected_dist_ranges": [
+    [
+      500,
+      710
+    ],
+    [
+      5770,
+      5810
+    ]
+  ],
+  "parser_version_frozen": true,
+  "parser_regexp_literal_path_disabled_by_own_subclass": true,
+  "npm_gitHead_verified_on_source_repository": {
+    "sha": "6dc537416ad628b3959b3ff963fbdcfdb380e0a3",
+    "url": "https://github.com/acornjs/acorn/commit/6dc537416ad628b3959b3ff963fbdcfdb380e0a3",
+    "tree": "dae88ae46d7873b62b6d29d85ac094665b8f65da",
+    "message_first_line": "Mark version 8.15.0"
+  }
+}

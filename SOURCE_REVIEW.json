@@ -1,0 +1,238 @@
+{
+  "upstream": "mozilla/eslint-plugin-no-unsanitized",
+  "fixed_commit": "7eb1c8ae4179da3bc3916ece1818cc493f026764",
+  "license": "MPL-2.0",
+  "scope": "All four selected upstream runtime files (entry, property/method rules and RuleHelper), complete package/scope/docs/executable configuration + license. Upstream tests/lock are exact stated selected ranges only; no complete upstream/dependency/test audit claimed.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "git_blob_sha1": "a612ad9813b006ce81d1ee438dd784da99a54007",
+      "fixed_tree_blob_match": true,
+      "lines": 373,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/LICENSE",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "d00332f53d4256df9d437f3cdcd69917e42766d92063c2c36ab73befbc8bf352",
+      "git_blob_sha1": "26a479fc762f742d331b6b5f057fa976b945fff5",
+      "fixed_tree_blob_match": true,
+      "lines": 57,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/package.json",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "index.js",
+      "sha256": "2d1e5aa0e94de4f7b1d2dd56aedba93efff40e74c6dbd58dfc7d877df65322be",
+      "git_blob_sha1": "7afe4e74fe1ea1d6f9d49b41263d4acd4790ae82",
+      "fixed_tree_blob_match": true,
+      "lines": 32,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/index.js",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "lib/rules/property.js",
+      "sha256": "a89c70669a99bdde0769593766f589912e303afacafc7390389ec5e766647823",
+      "git_blob_sha1": "08f98837ed65a1db118e60a3a3d8a15a45e86f4c",
+      "fixed_tree_blob_match": true,
+      "lines": 104,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/lib/rules/property.js",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "lib/rules/method.js",
+      "sha256": "cf76b0a68bb417b1fb8919df77e98f7981da390aaf189a92f231468b4bba4930",
+      "git_blob_sha1": "45c5020398fc50aec0ab7959e3d48ba36f74172c",
+      "fixed_tree_blob_match": true,
+      "lines": 224,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/lib/rules/method.js",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "lib/ruleHelper.js",
+      "sha256": "b7fbb66de227bc5916c4c14e90c2c9ac1f1f8ad50647b7f9c67376430d232914",
+      "git_blob_sha1": "0d42099c83494e80cc2315df3d2e817b7fc2b27d",
+      "fixed_tree_blob_match": true,
+      "lines": 581,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/lib/ruleHelper.js",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "README.md",
+      "sha256": "5bb726c82763d80d77b0ca72720cdf1aeccf8e5381dfe28cbee0db24fe3d9358",
+      "git_blob_sha1": "8afdb34f93a9bd1cd67c51637e26efda64be69bf",
+      "fixed_tree_blob_match": true,
+      "lines": 84,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/README.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "SCHEMA.md",
+      "sha256": "8f523360182cbbeff60389d323ab6ac7000ebb9895e6b01a607a788092f259a4",
+      "git_blob_sha1": "17ea1a032591d735f01bead99547ae00784c0764",
+      "fixed_tree_blob_match": true,
+      "lines": 43,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/SCHEMA.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "bf0e90bc042c589adf6aaf64e2d4fd8c52e0c287fc76a8f149b4986e281ebbf4",
+      "git_blob_sha1": "64f275d4a2cca9ed9773c7897664d007785421b4",
+      "fixed_tree_blob_match": true,
+      "lines": 58,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/SECURITY.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "docs/rules/property.md",
+      "sha256": "677eb9bdcd521a83f6e0e3242ca3a2f6cd1ee304fbf4d6239193a332b554b70d",
+      "git_blob_sha1": "33a33310f36c377d92b385ae5fa810375972ed26",
+      "fixed_tree_blob_match": true,
+      "lines": 21,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/docs/rules/property.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "docs/rules/method.md",
+      "sha256": "1792700e40312039f25facd51897e076126acca08c3fe8322b1cf51b6c5614e5",
+      "git_blob_sha1": "f745202fc313f768f5e2f8d92a845cd4ef82e7d9",
+      "fixed_tree_blob_match": true,
+      "lines": 20,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/docs/rules/method.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "docs/rules/customization.md",
+      "sha256": "9209d5ca04f0d3765d331ced7f531b1d30ddddd33e215ce956aac43197ab421a",
+      "git_blob_sha1": "2b7b440df3298f61a532214f56388236ee8ab59a",
+      "fixed_tree_blob_match": true,
+      "lines": 92,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/docs/rules/customization.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "docs/rules/fixing-violations.md",
+      "sha256": "f05cf771dbddf4a1c85968fe6651e9c82dfbd6bcf7ebe7dd26272b1bc10476ee",
+      "git_blob_sha1": "bbdba02443ea98dd8b0e18af3d82b6f839552180",
+      "fixed_tree_blob_match": true,
+      "lines": 20,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/docs/rules/fixing-violations.md",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "eslint.config.mjs",
+      "sha256": "ab4b726983edff2b62344247a57ee57ecfd790dfbe8908bbc2f7fb930e3e9420",
+      "git_blob_sha1": "45b4dfe0eb14d6432d48b0663c7b41a9055c86b5",
+      "fixed_tree_blob_match": true,
+      "lines": 78,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/eslint.config.mjs",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "prettier.config.mjs",
+      "sha256": "86361d2f1b0231fd7adde7b630ce4fa8239e9ea6918741adc0e5cf77f3da3ea6",
+      "git_blob_sha1": "aeb914670d14f99c440432f6bf163a67e2d44f9d",
+      "fixed_tree_blob_match": true,
+      "lines": 4,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/prettier.config.mjs",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": ".babelrc",
+      "sha256": "0b87ff276a8b0ede3f8a0256d371f7ce6b3361b14b8d840448e8b0da6a59fa05",
+      "git_blob_sha1": "d51d656da9f2b4f6a93d30f26e5251f763db75b0",
+      "fixed_tree_blob_match": true,
+      "lines": 6,
+      "read_scope": "complete_file",
+      "reviewed_ranges": null,
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/.babelrc",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "b046d11a3a5b6f6589cb3840aa3ebddcb9190ee4eb0c3432dd51ad557cc9a39b",
+      "git_blob_sha1": "96aef4c50cf7597650c5a416bd61198e97a66c3e",
+      "fixed_tree_blob_match": true,
+      "lines": 3820,
+      "read_scope": "selected_ranges",
+      "reviewed_ranges": [
+        [
+          1,
+          31
+        ]
+      ],
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/package-lock.json",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "tests/rules/property.js",
+      "sha256": "7f34e295f0ee1299289097576e4e386e2599f0e89d2988db306ed3c2399100c8",
+      "git_blob_sha1": "238b47debeb26ae0ac80c88e2cf7dccc5351b07d",
+      "fixed_tree_blob_match": true,
+      "lines": 672,
+      "read_scope": "selected_ranges",
+      "reviewed_ranges": [
+        [
+          1,
+          80
+        ]
+      ],
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/tests/rules/property.js",
+      "fixed_remote_bytes_match": true
+    },
+    {
+      "path": "tests/rules/method.js",
+      "sha256": "ade80f41c521aeed2929124232e1cd15a3dd06914948e94c0ffcd252980f6ab9",
+      "git_blob_sha1": "4d62e4a04cf49ead1dd168753e0d91f78376cc9b",
+      "fixed_tree_blob_match": true,
+      "lines": 971,
+      "read_scope": "selected_ranges",
+      "reviewed_ranges": [
+        [
+          1,
+          65
+        ]
+      ],
+      "source_url": "https://raw.githubusercontent.com/mozilla/eslint-plugin-no-unsanitized/7eb1c8ae4179da3bc3916ece1818cc493f026764/tests/rules/method.js",
+      "fixed_remote_bytes_match": true
+    }
+  ],
+  "effects_removed": [
+    "ESLint execution/config/plugin loading",
+    "Dynamic import rule execution/evaluation",
+    "Source execution/browser/payload/fix actions"
+  ],
+  "differences": "No same-name sanitizer trust, source-code/error-message output, regexp receiver matching or silent missing/spread arguments. Binding + asserted parameter contracts, finite hosts and explicit OPEN replace those boundaries."
+}

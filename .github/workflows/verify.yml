@@ -1,0 +1,32 @@
+name: Verify offline DOM source policy
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '25.9.0'
+      - name: Install only this analyzer's pinned trusted parser
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+      - name: Test and syntax check own analyzer
+        run: |
+          npm test
+          for source_file in src/*.mjs; do node --check "$source_file"; done
+      - name: Exercise declared report outcomes
+        run: |
+          set -eu
+          node src/cli.mjs < examples/request-pass.json > /tmp/dom-pass.json
+          status=0
+          node src/cli.mjs < examples/request-fail.json > /tmp/dom-fail.json || status=$?
+          test "$status" -eq 1
+          status=0
+          node src/cli.mjs < examples/request-open.json > /tmp/dom-open.json || status=$?
+          test "$status" -eq 2
+          node src/cli.mjs < examples/request-sanitizer.json > /tmp/dom-sanitizer.json

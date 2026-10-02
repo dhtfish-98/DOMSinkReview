@@ -1,0 +1,17 @@
+DOMSinkReview — independent bounded JavaScript HTML sink source-policy review.
+Copyright 2026 dhtfish-98. Implementation, tests and documentation assisted by Codex.
+Human authorship, ownership and organizational authorization remain unverified.
+
+Reference: mozilla/eslint-plugin-no-unsanitized
+Fixed commit: 7eb1c8ae4179da3bc3916ece1818cc493f026764
+Selected original source attribution: Frederik Braun et al.;
+Copyright 2015-2017 Mozilla Corporation. All rights reserved.
+Original MPL-2.0 license retained at third_party/mozilla/LICENSE.
+No original upstream runtime is copied, linked or invoked.
+New source distributed under MPL-2.0 with source included.
+
+Parser dependency: Acorn 8.15.0 (MIT)
+Copyright (C) 2012-2022 by various contributors (see original AUTHORS).
+Exact notice retained at third_party/acorn/LICENSE; npm published distribution
+origin/integrity is independently recorded, not claimed as rewritten code.
+Node.js is a required separate runtime; no Node executable is redistributed.

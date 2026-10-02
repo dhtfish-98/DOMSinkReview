@@ -1,0 +1,39 @@
+{
+  "name": "dom-sink-review",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Bounded offline source-policy review of declared HTML sinks and sanitizer bindings",
+  "license": "MPL-2.0",
+  "engines": {
+    "node": ">=22 <27"
+  },
+  "bin": {
+    "dom-sink-review": "src/cli.mjs"
+  },
+  "exports": {
+    ".": "./src/review.mjs"
+  },
+  "dependencies": {
+    "acorn": "8.15.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "files": [
+    "src",
+    "examples",
+    "test",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "ORIGIN.md",
+    "DEFENSIVE_SCOPE.md",
+    "DEPENDENCIES.md",
+    "VALIDATION.md",
+    "SOURCE_REVIEW.json",
+    "SOURCE_AUDIT.json",
+    "third_party",
+    ".github"
+  ]
+}
