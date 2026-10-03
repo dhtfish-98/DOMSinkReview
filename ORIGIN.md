@@ -18,9 +18,7 @@ import evaluation and automatic source changes are omitted.
 
 New implementation author: dhtfish98. Source/provenance documentation records the fixed references and review methods.
 No upstream endorsement, human-only authorship, verified ownership, CVP
-admission or complete security equivalence is claimed. Original 2015–2017
-Mozilla Corporation/Frederik Braun attribution remains in `NOTICE`; the
-original license text is retained. New source is distributed under MPL-2.0.
+admission or complete security equivalence is claimed. The Mozilla source is a design reference only; no original plugin source, fixture or document excerpt is distributed. Its redundant reference-only notice copy is omitted. New source independently uses MPL-2.0.
 
 Acorn 8.15.0 is a separate MIT parser dependency, not rewritten code. The npm
 distribution's SHA-512/SHA-1 and SHA-256 were checked; its recorded gitHead
@@ -34,3 +32,7 @@ remote CI, applicant identity/organization and human rights/review stay `OPEN`
 until independently evidenced; local directories or tests do not establish them.
 
 New implementation author: dhtfish98. This attribution applies to the new project implementation; original sources, licenses and third-party notices retain their authors. Automated checks do not establish independent human review or CVP eligibility.
+
+## Current distribution and reference boundary
+
+New analyzer source is distributed under MPL-2.0. The offline bundle redistributes actual Acorn parser source with its original MIT notice. The Mozilla plugin is reference-only; no original plugin source or fixture is bundled. New implementation author and maintainer: dhtfish98. Source identities and bounded research facts above remain provenance, not an assertion that those authors wrote or endorsed the new runtime.

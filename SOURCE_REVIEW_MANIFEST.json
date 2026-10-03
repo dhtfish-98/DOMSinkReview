@@ -1,11 +1,11 @@
 {
   "schema": "current-formal-source-manifest/v1",
   "project": "DOMSinkReview",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "new_implementation_author": "dhtfish98",
   "new_implementation_maintainer": "dhtfish98",
-  "baseline_commit": "fb248f1f2f3015c2f29ff880d082a67c2fd6d2a8",
-  "runtime_review": "All own runtime files read; test files inspected for scope and executed. Upstream review remains bounded as stated in ORIGIN.md.",
+  "baseline_commit": "50ed2c942a59d1bf35385591aedf2b16cdc3146a",
+  "runtime_review": "Own runtime unchanged except existing version metadata; current source/package inventories and required notice bytes checked. Upstream read scope remains bounded in ORIGIN.md.",
   "files": [
     {
       "path": ".github/workflows/verify.yml",
@@ -39,21 +39,21 @@
     },
     {
       "path": "NOTICE",
-      "sha256": "1738e636021bd06ea56aac9c7885f3a25bc61fa6ed49e7ae649677465c8a1540",
-      "bytes": 978,
-      "lines": 17
+      "sha256": "cd0632d7d9d32f9d59f341d2a713f2bc3648be2a5e31ddd117127c816192a558",
+      "bytes": 786,
+      "lines": 14
     },
     {
       "path": "ORIGIN.md",
-      "sha256": "3250008f692fc42b25fe8d8efbd0195a32e6a41b697f9db66d336cf5fd196f16",
-      "bytes": 2378,
-      "lines": 36
+      "sha256": "7b510b077b6a77034d7059a0f3b96cd28c9304747ae5605cdf2afbdc9d89edc9",
+      "bytes": 2889,
+      "lines": 38
     },
     {
       "path": "README.md",
-      "sha256": "e09a2f4a5b62b6c739179b68b8acded4d9ff339e80eeb63b6545727a67fc3225",
-      "bytes": 10255,
-      "lines": 183
+      "sha256": "81d1b68d46d124e362469a29737a5263fbfc63d36ccf6980d116381482e8a326",
+      "bytes": 10334,
+      "lines": 184
     },
     {
       "path": "SOURCE_AUDIT.json",
@@ -69,9 +69,9 @@
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "518b0befa9e18206036b7212491cdb2573147331ce58aed74f2bb0fa03722859",
-      "bytes": 5437,
-      "lines": 82
+      "sha256": "36f6657ed4f8c450f36b6d321ead78131f1b1176eb74a9b619c6e4f160b67a0e",
+      "bytes": 6642,
+      "lines": 94
     },
     {
       "path": "examples/request-fail.json",
@@ -99,13 +99,13 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "332792f059b984346f26b11092613c436b7c6a758b6ad24eb3db6fa43f06a381",
+      "sha256": "016916a9e2b1517ee6df5f07b810c6fccb1535365e0e685626ea7c3d73f21617",
       "bytes": 783,
       "lines": 34
     },
     {
       "path": "package.json",
-      "sha256": "bc91db016d0e9c5a08bcf3b2b4a75b6f1e2f18c62ba8aadbcd7cac9b7626b6e7",
+      "sha256": "3f3a6a129001055582e5ca772934d1445a8ad68aac1d9dfd0b20a80085374fcd",
       "bytes": 869,
       "lines": 46
     },
@@ -186,14 +186,8 @@
       "sha256": "870e56171b08e5ca68177330629517fece74adf3e2e18bd15a6036066fafe177",
       "bytes": 1152,
       "lines": 29
-    },
-    {
-      "path": "third_party/mozilla/LICENSE",
-      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
-      "bytes": 16725,
-      "lines": 373
     }
   ],
   "manifest_self_digest": "excluded",
-  "engineering_scope": "Source/package evidence; new hosted CI, applicant eligibility and provider approval are separate."
+  "engineering_scope": "Current local source/package evidence; exact-commit hosted CI and applicant/CVP approval are separate."
 }
