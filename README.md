@@ -1,5 +1,8 @@
 # DOMSinkReview
 
+
+New implementation author: **dhtfish98**. Current project version: **0.1.2**.
+
 A new, offline, bounded JavaScript AST analyzer for declared HTML sinks and
 local sanitizer bindings. It uses the mature Acorn 8.15.0 parser as a separate
 MIT dependency. It does not invoke the original Mozilla ESLint plugin.
@@ -172,7 +175,7 @@ tree blobs and remote bytes match. This is a complete new implementation of
 this finite subset, not the entire plugin's configurable rule surface,
 TypeScript/Babel support or ESLint execution platform.
 
-Codex assisted implementation, tests and documentation. Original Mozilla/
+New implementation author: dhtfish98. Original Mozilla/
 Frederik Braun attribution and MPL text are retained. Acorn is a pinned,
 separate mature dependency with its exact MIT notice. Local tests, package
 identity and fresh offline consumer evidence are in `VALIDATION.md` and the

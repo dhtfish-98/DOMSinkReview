@@ -244,5 +244,6 @@
       "kind": "package_ci_scope_origin_data",
       "read_scope": "license_identity_and_attribution"
     }
-  ]
+  ],
+  "delivery_snapshot_note": "Local implementation/package observations in this record belong to the earlier delivery; current file digests and version are in SOURCE_REVIEW_MANIFEST.json. Upstream identities, hashes and review scope are retained."
 }

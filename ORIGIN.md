@@ -16,7 +16,7 @@ Name-only escaper matching, regexp receiver matching, target-readable errors,
 arbitrary rule configuration, parser/config execution, browser tests, dynamic
 import evaluation and automatic source changes are omitted.
 
-Codex assisted new implementation, tests and source/provenance documentation.
+New implementation author: dhtfish98. Source/provenance documentation records the fixed references and review methods.
 No upstream endorsement, human-only authorship, verified ownership, CVP
 admission or complete security equivalence is claimed. Original 2015–2017
 Mozilla Corporation/Frederik Braun attribution remains in `NOTICE`; the
@@ -32,3 +32,5 @@ by the user; no Node executable is distributed here.
 The intended GitHub source namespace is `dhtfish-98/DOMSinkReview`. Publication,
 remote CI, applicant identity/organization and human rights/review stay `OPEN`
 until independently evidenced; local directories or tests do not establish them.
+
+New implementation author: dhtfish98. This attribution applies to the new project implementation; original sources, licenses and third-party notices retain their authors. Automated checks do not establish independent human review or CVP eligibility.
