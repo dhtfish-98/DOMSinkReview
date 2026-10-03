@@ -7,8 +7,32 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ github.workspace }}/Build/源码
+    env:
+      TMPDIR: ${{ github.workspace }}/Build/临时
+      TMP: ${{ github.workspace }}/Build/临时
+      TEMP: ${{ github.workspace }}/Build/临时
+      PYTHONPYCACHEPREFIX: ${{ github.workspace }}/Build/缓存/python
+      PIP_CACHE_DIR: ${{ github.workspace }}/Build/缓存/pip
+      npm_config_cache: ${{ github.workspace }}/Build/缓存/npm
+      RUFF_CACHE_DIR: ${{ github.workspace }}/Build/缓存/ruff
+      GOCACHE: ${{ github.workspace }}/Build/缓存/go
+      GOMODCACHE: ${{ github.workspace }}/Build/缓存/go-mod
+      GOTMPDIR: ${{ github.workspace }}/Build/临时
+      GOPATH: ${{ github.workspace }}/Build/缓存/go-path
+      GOBIN: ${{ github.workspace }}/Build/输出/go-bin
+      CARGO_HOME: ${{ github.workspace }}/Build/缓存/cargo
+      XDG_CACHE_HOME: ${{ github.workspace }}/Build/缓存/xdg
+      CCACHE_DIR: ${{ github.workspace }}/Build/缓存/ccache
+      SCCACHE_DIR: ${{ github.workspace }}/Build/缓存/sccache
+      NODE_COMPILE_CACHE: ${{ github.workspace }}/Build/缓存/node
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Stage source and restored project inputs under Build
+        run: ${{ runner.os == 'Windows' && 'python' || 'python3' }} 构建.py --stage --ci
+        working-directory: ${{ github.workspace }}
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '25.9.0'
@@ -22,11 +46,11 @@ jobs:
       - name: Exercise declared report outcomes
         run: |
           set -eu
-          node src/cli.mjs < examples/request-pass.json > /tmp/dom-pass.json
+          node src/cli.mjs < examples/request-pass.json > "$TMPDIR/dom-pass.json"
           status=0
-          node src/cli.mjs < examples/request-fail.json > /tmp/dom-fail.json || status=$?
+          node src/cli.mjs < examples/request-fail.json > "$TMPDIR/dom-fail.json" || status=$?
           test "$status" -eq 1
           status=0
-          node src/cli.mjs < examples/request-open.json > /tmp/dom-open.json || status=$?
+          node src/cli.mjs < examples/request-open.json > "$TMPDIR/dom-open.json" || status=$?
           test "$status" -eq 2
-          node src/cli.mjs < examples/request-sanitizer.json > /tmp/dom-sanitizer.json
+          node src/cli.mjs < examples/request-sanitizer.json > "$TMPDIR/dom-sanitizer.json"

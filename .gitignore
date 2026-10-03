@@ -4,3 +4,10 @@
 /.consumer*/
 /.npm-cache/
 *.log
+
+# All generated build outputs and staging are local.
+!/Build/
+/Build/*
+!/Build/.gitignore
+__pycache__/
+*.py[cod]
