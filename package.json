@@ -31,10 +31,10 @@
     "项目文档/DEFENSIVE_SCOPE.md",
     "项目文档/DEPENDENCIES.md",
     "项目文档/VALIDATION.md",
-    "SOURCE_REVIEW.json",
-    "SOURCE_AUDIT.json",
+    "项目文档/SOURCE_REVIEW.json",
+    "项目文档/SOURCE_AUDIT.json",
     "SOURCE_REVIEW_MANIFEST.json",
-    "third_party",
+    "项目文档/third_party",
     ".github",
     "项目文档/third_party/acorn/LICENSE"
   ],
