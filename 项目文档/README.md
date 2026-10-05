@@ -3,7 +3,7 @@
 # DOMSinkReview
 
 
-New implementation author: **dhtfish98**. Current project version: **0.1.3**.
+New implementation author: **dhtfish98**. Current project version: **0.1.4**.
 
 A new, offline, bounded JavaScript AST analyzer for declared HTML sinks and
 local sanitizer bindings. It uses the mature Acorn 8.15.0 parser as a separate

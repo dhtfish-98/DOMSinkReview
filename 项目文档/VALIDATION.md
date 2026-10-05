@@ -1,4 +1,12 @@
-# Current delivery validation — 0.1.3
+# Current release validation — 0.1.4, 2026-10-05
+
+This patch publishes the already public Build/项目文档 layout with a matching package version. Runtime source and the Acorn 8.15.0 dependency are unchanged from public main 3d2509377749591d0ea80ddf0efab6f395e63eaf. New implementation author and maintainer: dhtfish98. The retained Acorn MIT license and applicable MPL-2.0 terms remain in the package.
+
+The current source inventory is SOURCE_REVIEW_MANIFEST.json. Exact build, source-test, installed-consumer, package-content, remote CI, tag and release results require separate checks bound to this version; neither this source document nor historical results establish CVP eligibility or approval.
+
+## Historical delivery evidence
+
+# Prior delivery validation — 0.1.3
 
 New implementation author and maintainer: dhtfish98. This patch removes only source-reference or unbundled-dependency notice copies identified as unused. Licenses/notices associated with redistributed material and specific OPEN applicability questions are retained byte-for-byte. The new own runtime differs only in version metadata; parser and policy behavior are unchanged.
 

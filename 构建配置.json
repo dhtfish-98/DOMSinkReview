@@ -33,12 +33,12 @@
     {
       "original": "README.md",
       "stored": "项目文档/README.md",
-      "sha256": "b018e17cf59ab35b749028cc32a2fcae4ebb8c20c6e37e39c819ab738b7b3255"
+      "sha256": "aac267a294850d0d4edd6ce1981ecaa8e450d4e66efc82ed0fe1ab89d2290196"
     },
     {
       "original": "VALIDATION.md",
       "stored": "项目文档/VALIDATION.md",
-      "sha256": "36f6657ed4f8c450f36b6d321ead78131f1b1176eb74a9b619c6e4f160b67a0e"
+      "sha256": "2cc5dd2595c4a87adf67df01d01e7581c7039df5a844909fedc5f01f14a7dae9"
     },
     {
       "original": "third_party/acorn/LICENSE",

@@ -1,6 +1,6 @@
 {
   "name": "dom-sink-review",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
   "description": "Bounded offline source-policy review of declared HTML sinks and sanitizer bindings",

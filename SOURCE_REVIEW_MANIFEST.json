@@ -1,11 +1,11 @@
 {
   "schema": "current-formal-source-manifest/v1",
   "project": "DOMSinkReview",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "new_implementation_author": "dhtfish98",
   "new_implementation_maintainer": "dhtfish98",
   "baseline_commit": "50ed2c942a59d1bf35385591aedf2b16cdc3146a",
-  "runtime_review": "Own runtime unchanged except existing version metadata; current source/package inventories and required notice bytes checked. Upstream read scope remains bounded in ORIGIN.md.",
+  "runtime_review": "Public main runtime unchanged; package version advances for release of the existing Build/项目文档 layout. Acorn dependency and retained notices unchanged.",
   "files": [
     {
       "path": ".github/workflows/verify.yml",
@@ -51,13 +51,13 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "016916a9e2b1517ee6df5f07b810c6fccb1535365e0e685626ea7c3d73f21617",
+      "sha256": "51dc768d9194c45f9739a3cae2c1ea8213f4847e17d30c594d28af44782c019b",
       "bytes": 783,
       "lines": 34
     },
     {
       "path": "package.json",
-      "sha256": "170605342ed4c088afee1fcd8a508c126a2ed0d37e809711cbf3dedd3a41be38",
+      "sha256": "05898aea6a77d87c5276e448464af2c82e624295617708b960adff51c1cec01e",
       "bytes": 1045,
       "lines": 47
     },
@@ -135,7 +135,7 @@
     },
     {
       "path": "构建配置.json",
-      "sha256": "072b96fe0fd6f3548aa969f76f7cebfce5a2da1af03b8063ba0ee084117223f0",
+      "sha256": "d7b396a922ac927c6da7e2971b8775bbb8859d4c32ec23a1a9a42dc52f877856",
       "bytes": 1648,
       "lines": 50
     },
@@ -171,7 +171,7 @@
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "b018e17cf59ab35b749028cc32a2fcae4ebb8c20c6e37e39c819ab738b7b3255",
+      "sha256": "aac267a294850d0d4edd6ce1981ecaa8e450d4e66efc82ed0fe1ab89d2290196",
       "bytes": 10689,
       "lines": 186
     },
@@ -189,9 +189,9 @@
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "36f6657ed4f8c450f36b6d321ead78131f1b1176eb74a9b619c6e4f160b67a0e",
-      "bytes": 6642,
-      "lines": 94
+      "sha256": "2cc5dd2595c4a87adf67df01d01e7581c7039df5a844909fedc5f01f14a7dae9",
+      "bytes": 7379,
+      "lines": 102
     },
     {
       "path": "项目文档/third_party/acorn/LICENSE",
