@@ -1,11 +1,11 @@
 {
   "schema": "current-formal-source-manifest/v1",
   "project": "DOMSinkReview",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "new_implementation_author": "dhtfish98",
   "new_implementation_maintainer": "dhtfish98",
-  "baseline_commit": "50ed2c942a59d1bf35385591aedf2b16cdc3146a",
-  "runtime_review": "Public main runtime unchanged; package version advances for release of the existing Build/项目文档 layout. Acorn dependency and retained notices unchanged.",
+  "baseline_commit": "92a0a2e2c26af50a3aca7fa0135944e77a26b489",
+  "runtime_review": "Runtime source and pinned Acorn dependency match public v0.1.4 exactly. This patch corrects the packaged NOTICE version label and advances package metadata to 0.1.5; retained Acorn rights are unchanged.",
   "files": [
     {
       "path": ".github/workflows/verify.yml",
@@ -51,13 +51,13 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "51dc768d9194c45f9739a3cae2c1ea8213f4847e17d30c594d28af44782c019b",
+      "sha256": "d8cd3f9b5c377f36e6e9408a951577dc282d382cd58a203e00428211731518a9",
       "bytes": 783,
       "lines": 34
     },
     {
       "path": "package.json",
-      "sha256": "05898aea6a77d87c5276e448464af2c82e624295617708b960adff51c1cec01e",
+      "sha256": "c3283237f56420ea852f93404b60d4c779f6021d002adb06d10786004841dfd9",
       "bytes": 1045,
       "lines": 47
     },
@@ -135,7 +135,7 @@
     },
     {
       "path": "构建配置.json",
-      "sha256": "d7b396a922ac927c6da7e2971b8775bbb8859d4c32ec23a1a9a42dc52f877856",
+      "sha256": "940652db67e7b69054ee63f8b8dd96001fb03c0c7ddbbf32f1ae21c877eb8694",
       "bytes": 1648,
       "lines": 50
     },
@@ -159,7 +159,7 @@
     },
     {
       "path": "项目文档/NOTICE",
-      "sha256": "cd0632d7d9d32f9d59f341d2a713f2bc3648be2a5e31ddd117127c816192a558",
+      "sha256": "2448cb6cc47253b3c7f173826fdd3d1f155e51cfd3bacb96d1a4ca4810060a74",
       "bytes": 786,
       "lines": 14
     },
@@ -171,7 +171,7 @@
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "aac267a294850d0d4edd6ce1981ecaa8e450d4e66efc82ed0fe1ab89d2290196",
+      "sha256": "8e93fcf52a98911c995378c28d2376c3065f676854fca5e68a195ca8f401440e",
       "bytes": 10689,
       "lines": 186
     },
@@ -189,9 +189,9 @@
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "2cc5dd2595c4a87adf67df01d01e7581c7039df5a844909fedc5f01f14a7dae9",
-      "bytes": 7379,
-      "lines": 102
+      "sha256": "b4596a48d09686a2f60cdfe50b917590c80336ff80a8d358b8450e95ef613ec8",
+      "bytes": 8073,
+      "lines": 110
     },
     {
       "path": "项目文档/third_party/acorn/LICENSE",

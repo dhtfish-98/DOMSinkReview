@@ -1,4 +1,12 @@
-# Current release validation — 0.1.4, 2026-10-05
+# Current release validation — 0.1.5, 2026-10-05
+
+This patch corrects the packaged NOTICE version label, which still said 0.1.3 in public v0.1.4. Runtime source and pinned Acorn 8.15.0 remain byte-identical to public commit 92a0a2e2c26af50a3aca7fa0135944e77a26b489. The new implementation author is dhtfish98; Acorn's original copyright and MIT terms remain intact. This is a distribution metadata correction, not a new security finding or a CVP qualification claim.
+
+The current source inventory is SOURCE_REVIEW_MANIFEST.json. Fresh build, source tests, installed consumer, package content, remote CI, tag and Release require separate version-bound checks.
+
+## Historical release validation
+
+# Prior release validation — 0.1.4, 2026-10-05
 
 This patch publishes the already public Build/项目文档 layout with a matching package version. Runtime source and the Acorn 8.15.0 dependency are unchanged from public main 3d2509377749591d0ea80ddf0efab6f395e63eaf. New implementation author and maintainer: dhtfish98. The retained Acorn MIT license and applicable MPL-2.0 terms remain in the package.
 

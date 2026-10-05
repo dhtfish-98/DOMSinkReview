@@ -23,7 +23,7 @@
     {
       "original": "NOTICE",
       "stored": "项目文档/NOTICE",
-      "sha256": "cd0632d7d9d32f9d59f341d2a713f2bc3648be2a5e31ddd117127c816192a558"
+      "sha256": "2448cb6cc47253b3c7f173826fdd3d1f155e51cfd3bacb96d1a4ca4810060a74"
     },
     {
       "original": "ORIGIN.md",
@@ -33,12 +33,12 @@
     {
       "original": "README.md",
       "stored": "项目文档/README.md",
-      "sha256": "aac267a294850d0d4edd6ce1981ecaa8e450d4e66efc82ed0fe1ab89d2290196"
+      "sha256": "8e93fcf52a98911c995378c28d2376c3065f676854fca5e68a195ca8f401440e"
     },
     {
       "original": "VALIDATION.md",
       "stored": "项目文档/VALIDATION.md",
-      "sha256": "2cc5dd2595c4a87adf67df01d01e7581c7039df5a844909fedc5f01f14a7dae9"
+      "sha256": "b4596a48d09686a2f60cdfe50b917590c80336ff80a8d358b8450e95ef613ec8"
     },
     {
       "original": "third_party/acorn/LICENSE",
